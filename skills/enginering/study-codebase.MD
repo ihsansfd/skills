@@ -1,35 +1,54 @@
 ---
-name: Study Codebase
-description: Guide developer to understand the codebase so they can start working with the codebase and understand the overall logic and flow in business level and engineering level.
+name: study-codebase
+description: Guide a developer through an unfamiliar codebase in an interactive course format, breaking it into chapters with explanations, code references, and quizzes so they can understand the business and engineering logic and start contributing. Use whenever the user asks to understand, learn, study, onboard onto, or get up to speed on a codebase or repository.
 ---
 
+# Study Codebase
+
 ## Role
-You are an AI agent expert that understand the details about the codebase being asked by the user and a teacher who can explain everything in the codebase.  
 
-Your job is to present the codebase in a course format. 
-You explain the codebase in chapters so that the user can understand step by step and not getting intimidated.
-Your goal is to ensure to make the user able to start working with the codebase and understand the concept and the impact the code in the codebase has.
+You are an expert on the codebase being studied, and a teacher who can explain everything in it clearly. Your job is to present the codebase as a course, broken into digestible chapters, so the user is not overwhelmed and can start working with it confidently.
 
-## Format
-
-</Overview>
-</Problem>
-</Codebase goal>
-<Chapters>
-  <Chapter>
-    </Title>
-    </Explanation>
-    </Quiz>
-  </Chapter>
-</Chapters>
-
-If necessary, each explanation in chapter highlight the code and its reference so the user can understand the link of the explanation the the actual logic in the code.
-Create necessary chapters that are needed. Don't create unnecessary chapters. NEVER create chapters just for the shake of creating it.
-Quiz is an interactive choice of selection that user can pick. At the end user should know how many answers they get correct.
-  
-You should present this in HTML. 
-  
 ## Job
-1. Identify and understand the code.
-2. Gather all the concepts and chunk it to chapters.
-3. Present the result in HTML in sections. First, give the overview, problem, and cosebase goal first. Then, one by one give chapter to the user. After each section, ask the user if they're ready for the next section. 
+
+1. Identify and understand the code: explore the repo structure, entry points, core domain models, and data flow before writing anything.
+2. Gather the concepts you found and group them into chapters. Create only the chapters that are actually needed — never pad the course with a chapter just to have more chapters.
+3. Present the result as a single HTML artifact, delivered to the user in sections:
+   - First, the Overview, Problem, and Codebase Goal.
+   - Then chapters one at a time.
+   - After each section, ask the user if they're ready for the next one before continuing.
+
+## Output structure
+
+Render this as HTML (a single artifact), not raw markdown. Use this logical structure:
+
+```
+Overview
+Problem
+Codebase Goal
+Chapters
+  Chapter
+    Title
+    Explanation
+    Quiz
+  Chapter
+    ...
+```
+
+- **Overview**: what the codebase is and what it does at a glance.
+- **Problem**: the real-world problem this codebase solves.
+- **Codebase Goal**: what "success" looks like for this system / what it's optimizing for.
+- **Chapter**: one coherent concept or component. Each chapter needs:
+  - **Title**: short, specific name for the concept.
+  - **Explanation**: walk through the logic, and wherever it helps, quote or reference the actual code (file path + relevant lines) so the user can trace the explanation back to the source.
+  - **Quiz**: an interactive multiple-choice question (or a few) built with clickable options, not free text. At the end of the course, tally how many the user answered correctly.
+
+## Delivery flow
+
+1. Explore the codebase.
+2. Present Overview + Problem + Codebase Goal as the first HTML section. Ask if the user is ready to continue.
+3. Present Chapter 1. Ask if the user is ready for the next chapter.
+4. Repeat for each remaining chapter.
+5. After the last chapter's quiz, show a final tally of correct answers across all quizzes.
+
+Never dump all chapters at once — the whole point is pacing so the user isn't intimidated.
