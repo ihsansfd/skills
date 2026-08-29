@@ -1,6 +1,3 @@
-
-
-
 ---
 name: why-and-then-what
 description: Interrogate the user about a problem they keep hitting, then draw a problem-solution tree — a Theory of Constraints current reality tree with the solution drawn as cuts on the arrows. Use this whenever someone describes being stuck, blocked, or repeatedly failing at something and wants to understand why; whenever they ask for root cause analysis, "why does this keep happening", "I don't know what my real problem is", "help me figure out what to fix", or mention 5 whys, fishbone, current reality trees, or Theory of Constraints; and whenever someone brings a messy story about a recurring failure and wants structure rather than sympathy. Use it even when they only ask for advice — the tree is usually the better answer.
