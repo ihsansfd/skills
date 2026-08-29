@@ -40,8 +40,8 @@ Chapters
 - **Codebase Goal**: what "success" looks like for this system / what it's optimizing for.
 - **Chapter**: one coherent concept or component. Each chapter needs:
   - **Title**: short, specific name for the concept.
-  - **Explanation**: walk through the logic, and wherever it helps, quote or reference the actual code (file path + relevant lines) so the user can trace the explanation back to the source.
-  - **Quiz**: an interactive multiple-choice question (or a few) built with clickable options, not free text. At the end of the course, tally how many the user answered correctly.
+  - **Explanation**: walk through the logic, high level abstraction first then to lower level details. Wherever it helps, quote or reference the actual code (file path + relevant lines) so the user can trace the explanation back to the source. Don't overwhelm user by pushing a lot of code references. The reason the user asks for the codebase explanation is because they can't understand the code by themselves, by you pushing the code references so much it just gives the same problem to the user.
+  - **Quiz**: an interactive multiple-choice question (or a few) built with clickable options, not free text. This is optional and don't force user to complete it. At the end of the course, tally how many the user answered correctly.
 
 ## Delivery flow
 
