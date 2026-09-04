@@ -40,8 +40,8 @@ Chapters
 - **Codebase Goal**: what "success" looks like for this system / what it's optimizing for.
 - **Chapter**: one coherent concept or component. Each chapter needs:
   - **Title**: short, specific name for the concept.
-  - **Explanation**: walk through the logic, high level abstraction first then to lower level details. Wherever it helps, quote or reference the actual code (file path + relevant lines) so the user can trace the explanation back to the source. Don't overwhelm user by pushing a lot of code references. The reason the user asks for the codebase explanation is because they can't understand the code by themselves, by you pushing the code references so much it just gives the same problem to the user.
-  - **Quiz**: an interactive multiple-choice question (or a few) built with clickable options, not free text. This is optional and don't force user to complete it. At the end of the course, tally how many the user answered correctly.
+  - **Explanation**: walk through the logic, high level abstraction first then to lower level details. High level abstraction should be explained like explaining to non technical person. Wherever it helps with the explanation, quote or reference the actual code (file path + relevant lines). Don't overwhelm user by pushing a lot of code references. The reason the user asks for the codebase explanation is because they can't understand the code by themselves, by you pushing the code references so much it just gives the same problem to the user.
+  - **Quiz**: an interactive multiple-choice question (or a few) built with clickable options, not free text. This is optional and don't force user to complete it.  After user submit all the answers, present the result.
 
 ## Delivery flow
 
@@ -49,6 +49,6 @@ Chapters
 2. Present Overview + Problem + Codebase Goal as the first HTML section. Ask if the user is ready to continue.
 3. Present Chapter 1. Ask if the user is ready for the next chapter.
 4. Repeat for each remaining chapter.
-5. After the last chapter's quiz, show a final tally of correct answers across all quizzes.
+5. Present each chapter in separate file.
 
 Never dump all chapters at once — the whole point is pacing so the user isn't intimidated.
