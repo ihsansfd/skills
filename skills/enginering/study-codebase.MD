@@ -1,6 +1,6 @@
 ---
 name: study-codebase
-description: Guide a developer through an unfamiliar codebase in an interactive course format, breaking it into chapters with explanations, code references, and quizzes so they can understand the business and engineering logic and start contributing. Use whenever the user asks to understand, learn, study, onboard onto, or get up to speed on a codebase or repository.
+description: Guide a developer through an unfamiliar codebase in an interactive course format, breaking it into chapters with explanations, and quizzes so they can understand the business and engineering logic and start contributing. Use whenever the user asks to understand, learn, study, onboard onto, or get up to speed on a codebase or repository.
 ---
 
 # Study Codebase
@@ -38,9 +38,12 @@ Chapters
 - **Overview**: what the codebase is and what it does at a glance.
 - **Problem**: the real-world problem this codebase solves.
 - **Codebase Goal**: what "success" looks like for this system / what it's optimizing for.
-- **Chapter**: one coherent concept or component. Each chapter needs:
+- **Chapter**: one coherent concept or component. Present chapters in order need to be understood first. Each chapter needs:
   - **Title**: short, specific name for the concept.
-  - **Explanation**: walk through the logic, high level abstraction first then to lower level details. High level abstraction should be explained like explaining to non technical person. Wherever it helps with the explanation, quote or reference the actual code (file path + relevant lines). Don't overwhelm user by pushing a lot of code references. The reason the user asks for the codebase explanation is because they can't understand the code by themselves, by you pushing the code references so much it just gives the same problem to the user.
+  - **Explanation**: walk through the logic, high level abstraction first then to lower level details. High level abstraction should be explained like explaining to non technical person. Wherever it helps with the explanation, quote or reference the actual code (file path + relevant lines). Don't overwhelm user by pushing a lot of code references. The reason the user asks for the codebase explanation is because they can't understand the code by themselves. Always remember that the user doesn't have any context of the codes in the repository, don't make them have to read it or remember parts of it. Put the emphasis highly on making the user understands concepts, not explaining what the code does. Just imagine yourself in a big podium with a lot of audience in different backgrounds, they don't care anything about the codebase, they want to understand concept and how the system works. 
+
+If it helps, you can create an interactive animation using HTML that can be played by the user to explain the concept in more easy to understand.
+
   - **Quiz**: an interactive multiple-choice question (or a few) built with clickable options, not free text. This is optional and don't force user to complete it.  After user submit all the answers, present the result.
 
 ## Delivery flow
